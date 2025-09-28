@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/name/assets/css/styles.css">
+</head>
+<body class="light">
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    
+    <div class="container">
+        <header class="fade-in">
+            <h1>📝 To-Do List</h1>
+            <p class="subtitle">Kelola tugas Anda dengan inspirasi harian</p>
+        </header>
+
+        <div class="navigation">
+            <div class="nav-links">
+                <a href="#" class="btn" id="showAddForm">➕ Tambah Tugas</a>
+                <a href="#" class="btn btn-secondary" id="showTodoList">📋 Lihat Daftar</a>
+            </div>
+        </div>
+
+        <!-- Add Todo Form -->
+        <div class="card fade-in" id="addTodoSection">
+            <h2>➕ Tambah Tugas Baru</h2>
+            <form id="todoForm">
+                <div class="form-group">
+                    <label for="todoTitle">Judul Tugas *</label>
+                    <input type="text" id="todoTitle" required placeholder="Masukkan judul tugas...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="todoDescription">Deskripsi</label>
+                    <textarea id="todoDescription" placeholder="Tambahkan deskripsi (opsional)..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-full">💾 Simpan Tugas</button>
+            </form>
+        </div>
+
+        <!-- Todo List -->
+        <div class="card fade-in" id="todoListSection" style="display: none;">
+            <h2>📋 Daftar Tugas</h2>
+            
+            <div class="todo-stats" id="todoStats">
+                <div class="stat-card">
+                    <span class="stat-number" id="totalTodos">0</span>
+                    <span class="stat-label">Total Tugas</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="completedTodos">0</span>
+                    <span class="stat-label">Selesai</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="pendingTodos">0</span>
+                    <span class="stat-label">Belum Selesai</span>
+                </div>
+            </div>
+
+            <div id="todoList">
+                <!-- Todo items will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="quote-section fade-in" id="quoteSection">
+            <h3>💭 Inspirasi Hari Ini</h3>
+            <div id="quoteContent" class="loading">
+                <div class="spinner"></div>
+                <p>Memuat inspirasi...</p>
+            </div>
+        </div>
+    </div>
+
+   <script src="src/main.js"></script>
+</body>
+</html>
