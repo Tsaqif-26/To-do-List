@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="light">
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+    
+    <div class="container">
+        <header class="fade-in">
+            <h1>📝 To-Do List</h1>
+            <p class="subtitle">Kelola tugas Anda dengan inspirasi harian</p>
+        </header>
+
+        <div class="navigation">
+            <div class="nav-links">
+                <a href="detail.html" class="btn btn-secondary">📋 Lihat Daftar Tugas</a>
+            </div>
+        </div>
+
+        <!-- Add Todo Form -->
+        <div class="card fade-in" id="addTodoSection">
+            <h2>➕ Tambah Tugas Baru</h2>
+            <form id="todoForm">
+                <div class="form-group">
+                    <label for="todoTitle">Judul Tugas *</label>
+                    <input type="text" id="todoTitle" required placeholder="Masukkan judul tugas...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="todoDescription">Deskripsi</label>
+                    <textarea id="todoDescription" placeholder="Tambahkan deskripsi (opsional)..."></textarea>
+                </div>
+                
+                <button type="button" id="addTodoBtn" class="btn btn-full">💾 Simpan Tugas</button>
+            </form>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="quote-section fade-in" id="quoteSection">
+            <h3>💭 Inspirasi Hari Ini</h3>
+            <div id="quoteContent" class="loading">
+                <div class="spinner"></div>
+                <p>Memuat inspirasi...</p>
+            </div>
+        </div>
+    </div>
+
+   <script type="module" src="src/main.js"></script>
+</body>
+</html>
