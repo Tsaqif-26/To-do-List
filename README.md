@@ -56,3 +56,13 @@ EVALUASI_BULAN_2_/
 -Progress bar persentase tugas selesai
 
 -Tambah kategori tugas (misalnya sekolah, rumah, kerja)
+
+## Link
+
+-Canva: https://www.canva.com/design/DAG0WbbDo-k/-pEmdcI6AQWxbaiKJ8cY2g/edit?utm_content=DAG0WbbDo-k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+-Video: https://youtu.be/qpQx0djK894
+
+-Vercel: https://to-do-list-iota-beryl-18.vercel.app/ 
+
+-GitHub: https://github.com/Tsaqif-26/To-do-List 
